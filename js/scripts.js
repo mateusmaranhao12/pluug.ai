@@ -113,3 +113,9 @@ document.getElementById('voltar').addEventListener('click', function () {
     document.getElementById('nicho').value = ''
     document.getElementById('termos').checked = false
 })
+
+//Scroll até a seção
+function scrollToSection() {
+    const section = document.getElementById('entre-em-contato')
+    section.scrollIntoView({ behavior: 'smooth' })
+}
