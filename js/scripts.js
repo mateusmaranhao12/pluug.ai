@@ -1,5 +1,5 @@
 //Data do lancamento
-const dataLancamento = new Date('2025-02-10T00:00:00')
+const dataLancamento = new Date('2025-04-27T00:00:00')
 
 //Atualizar contador a cada segundo
 function atualizarContador() {
