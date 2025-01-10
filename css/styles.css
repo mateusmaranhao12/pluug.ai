@@ -363,6 +363,18 @@
     padding: 10px;
 }
 
+.entre-em-contato .form-control:hover {
+    background-color: #d3cbff;
+    border: 1px solid #4c5754;
+    padding: 10px;
+}
+
+.entre-em-contato .form-control:hover {
+    background-color: #d3cbff;
+    border: 1px solid #4c5754;
+    padding: 10px;
+}
+
 .entre-em-contato .form-control::placeholder {
     color: #6a6a6a;
 }

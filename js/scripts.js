@@ -71,7 +71,7 @@ document.getElementById('enviar').addEventListener('click', function (e) {
         errorCheckbox.classList.add('active')
         hasError = true
     } else {
-        checkbox.classList.remove('error')
+checkbox.classList.remove('error')
         label.classList.remove('error')
         errorCheckbox.textContent = ''
         errorCheckbox.classList.remove('active')
