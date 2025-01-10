@@ -258,33 +258,44 @@
     <!--Entre em contato-->
     <section class="entre-em-contato">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="mt-5 mb-5">Entre em contato e fique por dentro das novidades no pré-lançamento </h2>
+            <!-- Formulário -->
+            <div id="formulario">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="mt-5 mb-5">Entre em contato e fique por dentro das novidades no pré-lançamento</h2>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <input type="text" id="nome" class="form-control" placeholder="Nome*" required>
+                        <span class="error-message" id="error-nome"></span>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <input type="email" id="email" class="form-control" placeholder="E-mail*" required>
+                        <span class="error-message" id="error-email"></span>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <input type="text" id="celular" class="form-control" placeholder="DDD + Celular*" required>
+                        <span class="error-message" id="error-celular"></span>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <input type="text" id="nicho" class="form-control" placeholder="Nicho de atuação">
+                    </div>
+                    <div class="form-check mt-5">
+                        <input class="form-check-input" type="checkbox" id="termos" required>
+                        <label class="form-check-label" for="termos">
+                            Li e aceito os termos de uso e política de privacidade
+                        </label>
+                        <span class="error-message" id="error-termos"></span>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3 mb-5">
+                        <button class="btn-enviar" id="enviar">Enviar</button>
+                    </div>
                 </div>
-                <div class="col-md-6 mt-4">
-                    <input type="nome" class="form-control" placeholder="Nome*">
-                </div>
-                <div class="col-md-6 mt-4">
-                    <input type="email" class="form-control" placeholder="E-mail*">
-                </div>
-                <div class="col-md-6 mt-4">
-                    <input type="celular" class="form-control" placeholder="DDD + Celular*">
-                </div>
-                <div class="col-md-6 mt-4">
-                    <input type="nicho" class="form-control" placeholder="Nicho de atuação">
-                </div>
+            </div>
 
-                <div class="form-check mt-5">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Li e aceito os termos de uso e política de privacidade
-                    </label>
-                </div>
-
-                <div class="d-flex justify-content-center mt-3 mb-5">
-                    <button class="btn-enviar">Enviar</button>
-                </div>
+            <!-- Tela de sucesso -->
+            <div id="sucesso" style="display: none; text-align: center;">
+                <h2>Formulário enviado com sucesso <i class="fa-solid fa-check"></i></h2>
+                <button class="btn-enviar mt-3" id="voltar">Ok</button>
             </div>
         </div>
     </section>
@@ -311,5 +322,5 @@
 
 </html>
 
-<script src="js/scripts.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="js/scripts.js"></script>

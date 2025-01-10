@@ -397,6 +397,46 @@
     color: #2DF8FA;
 }
 
+#formulario,
+#sucesso {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#sucesso {
+    padding: 50px;
+}
+
+.form-control.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.error-message.active {
+    display: block;
+}
+
+.form-check-input.error {
+    border: 2px solid #dc3545;
+    outline: none;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+.form-check-label.error {
+    color: #dc3545;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+
 /*Footer*/
 .rodape {
     background-color: #13B4EE;
