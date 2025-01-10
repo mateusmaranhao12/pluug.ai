@@ -158,3 +158,76 @@
     background-color: #4936AA;
     color: #2DF8FA;
 }
+
+/*Por que escolher*/
+
+.por-que-escolher {
+    display: flex;
+    justify-content: start;
+    /* Centraliza os itens no container principal */
+    gap: 20px;
+    /* Espaço entre os itens */
+}
+
+.por-que-escolher .item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    max-width: 300px;
+}
+
+.por-que-escolher img {
+    width: 100%;
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.por-que-escolher h3 {
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+
+.por-que-escolher p {
+    margin: 0;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.por-que-escolher h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-desconto {
+    background-color: #6751D1;
+    color: #FFF;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-desconto:hover {
+    background-color: #4936AA;
+    color: #2DF8FA;
+}
+
+@media (max-width: 768px) {
+
+    .por-que-escolher {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .por-que-escolher .item {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+}
