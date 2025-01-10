@@ -344,3 +344,55 @@
         margin-top: 20px;
     }
 }
+
+/*Entre em contato*/
+.entre-em-contato {
+    background-color: #d3cbff;
+    padding: 20px;
+}
+
+.entre-em-contato h2 {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.entre-em-contato .form-control {
+    background-color: #d3cbff;
+    border: 1px solid #6A6A6A;
+    padding: 10px;
+}
+
+.entre-em-contato .form-control::placeholder {
+    color: #6a6a6a;
+}
+
+.entre-em-contato .form-check-input {
+    background-color: #d3cbff;
+    border: 1px solid #6a6a6a
+}
+
+.entre-em-contato .form-check-input:checked {
+    background-color: #6751D1;
+    border-color: #ffffff;
+}
+
+.entre-em-contato .form-check label {
+    color: #6a6a6a;
+}
+
+.btn-enviar {
+    background-color: #6751D1;
+    color: #FFF;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-enviar:hover {
+    background-color: #4936AA;
+    color: #2DF8FA;
+}
