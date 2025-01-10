@@ -288,3 +288,59 @@
     }
 
 }
+
+/*Agentes inteligentes*/
+
+.agentes-inteligentes {
+    padding: 20px;
+}
+
+.agentes-inteligentes .col-md-6 {
+    margin-top: 70px;
+}
+
+.agentes-inteligentes h2 {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.agentes-inteligentes img {
+    border-radius: 20px;
+}
+
+.agentes-inteligentes li {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.agentes-inteligentes h6 {
+    color: black;
+    font-weight: bold;
+}
+
+.agentes-inteligentes .icone {
+    text-align: center;
+}
+
+.agentes-inteligentes .icone h6 {
+    margin-top: 10px;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.scroll-container img {
+    flex: 0 0 auto;
+    width: 80px;
+}
+
+@media (max-width: 768px) {
+    .agentes-inteligentes .col-md-6 {
+        margin-top: 20px;
+    }
+}
