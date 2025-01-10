@@ -280,3 +280,11 @@
     background-color: #4936AA;
     color: #2DF8FA;
 }
+
+@media (max-width: 768px) {
+
+    .cards-resultados {
+        margin-bottom: 30px;
+    }
+
+}
