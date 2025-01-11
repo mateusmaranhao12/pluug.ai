@@ -623,7 +623,7 @@ body.sobre #navegacao a#sobre {
 @media (max-width: 768px) {
     img {
         margin-bottom: 30px;
-        width: 100%;
+        object-fit: cover;
     }
 }
 
