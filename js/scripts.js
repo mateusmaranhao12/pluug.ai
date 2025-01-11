@@ -29,7 +29,7 @@ const intervalo = setInterval(atualizarContador, 1000)
 atualizarContador() // Chamada inicial para evitar o atraso de 1 segundo
 
 // Inicializa o EmailJS
-emailjs.init('hJrQXjzu6bgBnyM8x')
+emailjs.init('NjT534ImlGhnZQjtb')
 
 // Adiciona evento ao botão
 document.getElementById('enviar').addEventListener('click', function (e) {
@@ -86,7 +86,7 @@ checkbox.classList.remove('error')
             nicho: document.getElementById('nicho').value,
         }
 
-        emailjs.send('service_unaturj', 'template_buhwppl', templateParams)
+        emailjs.send('service_i182duv', 'template_crbklh3', templateParams)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text)
 
