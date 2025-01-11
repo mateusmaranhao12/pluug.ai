@@ -558,6 +558,10 @@ body.home a.home {
         margin: 10px auto;
         /* Centraliza o botão horizontalmente */
     }
+
+    .navbar-sobre img:hover {
+        transform: scale(1);
+    }
 }
 
 /*Tecnologia*/
@@ -597,4 +601,55 @@ body.sobre #navegacao a#sobre {
     transform: scale(1);
     border-radius: 20px;
     padding: 10px;
+}
+
+/*Transformamos ideias*/
+
+.transformamos-ideias {
+    padding: 20px;
+}
+
+.transformamos-ideias h2 {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+.transformamos-ideias h6 {
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+/*Movimento*/
+.movimento {
+    background: rgb(19, 180, 238);
+    background: radial-gradient(circle, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    padding: 30px;
+}
+
+.movimento h2 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.card-movimento {
+    max-width: 70%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .card-movimento {
+        max-width: 100%;
+    }
 }
