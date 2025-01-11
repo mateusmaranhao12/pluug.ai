@@ -653,3 +653,29 @@ body.sobre #navegacao a#sobre {
         max-width: 100%;
     }
 }
+
+/*Scrollbar*/
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Cor de fundo da barra */
+::-webkit-scrollbar-track {
+    background: #6651d131;
+    border-radius: 10px;
+}
+
+/* Cor e estilo do "thumb" (parte que desliza) */
+::-webkit-scrollbar-thumb {
+    background: #6751D1;
+    border-radius: 10px;
+    border: 2px solid #6651d144;
+}
+
+/* Opcional: Thumb ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #352a6b;
+}
