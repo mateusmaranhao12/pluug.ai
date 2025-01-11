@@ -629,10 +629,25 @@ body.sobre #navegacao a#sobre {
     color: black;
 }
 
+.transformamos-ideias .imagem-mobile {
+    display: none;
+}
+
+.transformamos-ideias .imagem-desktop {
+    display: block;
+}
+
 @media (max-width: 768px) {
     img {
         margin-bottom: 30px;
-        object-fit: cover;
+    }
+
+    .transformamos-ideias .imagem-mobile {
+        display: block;
+    }
+
+    .transformamos-ideias .imagem-desktop {
+        display: none;
     }
 }
 
@@ -657,9 +672,25 @@ body.sobre #navegacao a#sobre {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+.movimento .imagem-mobile {
+    display: none;
+}
+
+.movimento .imagem-desktop {
+    display: block;
+}
+
 @media (max-width: 768px) {
     .card-movimento {
         max-width: 100%;
+    }
+
+    .movimento .imagem-mobile {
+        display: block;
+    }
+
+    .movimento .imagem-desktop {
+        display: none;
     }
 }
 
