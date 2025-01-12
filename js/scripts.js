@@ -123,6 +123,10 @@ function redirecionarLinkedIn() {
     window.open('https://www.linkedin.com/company/pluug-ai/')
 }
 
+function redirecionarWhatsApp() {
+    window.open('https://www.wa.link/vwke0b')
+}
+
 //Scroll até a seção
 function scrollToSection() {
     const section = document.getElementById('entre-em-contato')

@@ -3,12 +3,15 @@ html {
     scroll-behavior: smooth;
 }
 
-html p, .list-agentes {
+html p,
+.list-agentes {
     font-size: 23px;
 }
 
 @media (max-width: 768px) {
-    html p, li {
+
+    html p,
+    li {
         font-size: 100%;
     }
 }
@@ -78,7 +81,6 @@ html p, .list-agentes {
 
 /*Navbar*/
 .navbar-index img {
-    width: 20%;
     cursor: pointer;
     transition: .3s ease;
 }
@@ -120,11 +122,21 @@ body.home a.home {
 
 /* Ajustes para telas mobile */
 @media (max-width: 768px) {
-    .navbar-expand-lg img {
-        width: 100%;
-        /* Tamanho máximo da logo */
+
+    .navbar-expand-lg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-index img {
+        margin-top: 25px;
         margin-bottom: 20px;
-        /* Espaçamento inferior */
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        /* Empurra o botão para a direita */
     }
 
     .navbar-index img:hover {
@@ -371,7 +383,8 @@ body.home a.home {
     }
 
     .scroll-container .icone {
-        flex: 0 0 33.33%; /* Ajusta para 3 ícones visíveis no mobile (33.33% cada) */
+        flex: 0 0 33.33%;
+        /* Ajusta para 3 ícones visíveis no mobile (33.33% cada) */
     }
 }
 
@@ -510,6 +523,15 @@ body.home a.home {
     width: 20%;
     cursor: pointer;
     transition: .3s ease;
+}
+
+.navbar-sobre .navbar-toggler {
+    border: none;
+}
+
+.navbar-sobre .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-color: transparent;
 }
 
 .navbar-sobre img:hover {
