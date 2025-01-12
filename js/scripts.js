@@ -114,6 +114,15 @@ document.getElementById('voltar').addEventListener('click', function () {
     document.getElementById('termos').checked = false
 })
 
+//Redirecionar redes sociais
+function redirecionarInstagram() {
+    window.open('https://www.instagram.com/pluug.ai?igsh=MWp5b3Z3c2dkNHRsdA%3D%3D&utm_source=qr')
+}
+
+function redirecionarLinkedIn() {
+    window.open('https://www.linkedin.com/company/pluug-ai/')
+}
+
 //Scroll até a seção
 function scrollToSection() {
     const section = document.getElementById('entre-em-contato')

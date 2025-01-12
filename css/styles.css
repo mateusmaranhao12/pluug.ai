@@ -3,11 +3,21 @@ html {
     scroll-behavior: smooth;
 }
 
+html p, .list-agentes {
+    font-size: 23px;
+}
+
+@media (max-width: 768px) {
+    html p, li {
+        font-size: 100%;
+    }
+}
+
 /*Lancamento*/
 .lancamento {
     background: rgb(19, 180, 238);
     background: radial-gradient(circle, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -359,6 +369,10 @@ body.home a.home {
     .agentes-inteligentes .col-md-6 {
         margin-top: 20px;
     }
+
+    .scroll-container .icone {
+        flex: 0 0 33.33%; /* Ajusta para 3 ícones visíveis no mobile (33.33% cada) */
+    }
 }
 
 /*Entre em contato*/
@@ -674,10 +688,12 @@ body.sobre #navegacao a#sobre {
 
 .movimento .imagem-mobile {
     display: none;
+    border-radius: 20px;
 }
 
 .movimento .imagem-desktop {
     display: block;
+    border-radius: 20px;
 }
 
 @media (max-width: 768px) {
@@ -692,6 +708,12 @@ body.sobre #navegacao a#sobre {
     .movimento .imagem-desktop {
         display: none;
     }
+}
+
+/*Modal*/
+
+.modal-body p {
+    font-size: 100%;
 }
 
 /*Scrollbar*/
