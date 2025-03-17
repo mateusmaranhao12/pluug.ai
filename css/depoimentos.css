@@ -1,0 +1,607 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F9F9F9;
+}
+
+/*Navbar*/
+.nav-vertical {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.search-bar .input-group-text {
+    background-color: transparent;
+    color: #8A8A8A;
+    border-radius: 20px;
+}
+
+.search-bar .form-control {
+    border-radius: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info .foto-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icones-roxos {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.icon-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.credits {
+    color: #8c00ff;
+    font-size: 14px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+.progress-bar {
+    background-color: #19b4ee;
+}
+
+.progress {
+    background-color: #e0f7ff;
+    height: 6px;
+    border-radius: 5px;
+}
+
+/*Menu dropdown*/
+.menu-dropdown {
+    position: absolute;
+    right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 10px;
+    display: none;
+    z-index: 10;
+    margin-top: -30px;
+}
+
+/* Exibe o menu dropdown quando ativo */
+.menu-dropdown.active {
+    display: block;
+}
+
+/* Estilos dos itens do menu */
+.menu-dropdown a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.menu-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.icones-dropdown {
+    margin-right: 10px;
+    height: 30px;
+}
+
+/* Botão de sair */
+.menu-dropdown .btn-sair {
+    background-color: rgb(98, 43, 226);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s ease;
+    width: 100%;
+}
+
+.menu-dropdown .btn-sair:hover {
+    background-color: rgb(30, 0, 100);
+}
+
+/*Modal Convidar*/
+.modal-content {
+    border-radius: 15px;
+    padding: 0px 20px 0px 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-tabs .nav-link {
+    font-weight: bold;
+    color: #6c757d;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+    color: #3EBBEB;
+    border-bottom: 2px solid #3EBBEB;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.modal-body h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.modal-body .quando-receberei {
+    background-color: #F9F5FE;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.modal-body .quando-receberei h6 {
+    color: #6751D1;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.modal-body p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.btn-convidar {
+    background-color: #fff;
+    color: #6751D1;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    transition: .3s ease;
+}
+
+.btn-convidar:hover {
+    box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.btn-copiar,
+.btn-recolher {
+    background-color: #3EBBEB;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+}
+
+.btn-copiar:hover {
+    background-color: #2EA5D3;
+}
+
+.btn-recolher:hover {
+    background-color: #2EA5D3;
+}
+
+.info-importante-titulo {
+    font-weight: bold;
+    text-align: start !important;
+    color: #6c757d;
+}
+
+.info-importante {
+    font-size: 0.8rem;
+    text-align: start !important;
+    color: #6c757d;
+}
+
+/*main content*/
+.main-content {
+    padding: 0;
+}
+
+/*Historias reais*/
+.historias-reais {
+    background: linear-gradient(90deg, rgba(19, 180, 238, 0.1) 0%, rgba(45, 248, 250, 0.1) 100%);
+}
+
+.historias-reais .container {
+    max-width: 100%;
+}
+
+.historias-reais-texto {
+    padding: 0px 30px;
+}
+
+.historias-reais h2 {
+    color: #3EBBEB;
+    font-weight: 400;
+}
+
+.historias-reais span {
+    font-weight: bold;
+}
+
+.historias-reais p {
+    color: #777777;
+    font-weight: 500;
+}
+
+.historias-reais .btn-quero-testar {
+    background: linear-gradient(90deg, rgba(19, 180, 238, 1) 0%, rgba(45, 248, 250, 1) 100%);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/*Criadores*/
+.criadores {
+    padding: 30px;
+}
+
+.criadores h2 {
+    color: #3EBBEB;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/*Estilização do card principal */
+.criadores-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.criadores-card .card-depoimento-criadores {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+/*Título do usuário */
+.criadores-card .criadores-nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*Texto do depoimento */
+.criadores-card .criadores-texto {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/*Controles (setas e indicadores) */
+.criadores-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*Botões de navegação */
+.criadores-btn {
+    background: none;
+    border: 1px solid #6751D1;
+    color: #6751D1;
+    padding: 6px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.criadores-btn:hover {
+    background: #6751D1;
+    color: #fff;
+}
+
+/*Indicadores */
+.criadores-indicadores {
+    display: flex;
+    gap: 5px;
+}
+
+.criadores-indicadores .indicador {
+    width: 8px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.criadores-indicadores .indicador.ativo {
+    background: #3EBBEB;
+    width: 10px;
+    height: 10px;
+}
+
+/* Transformacao conteudo */
+.transformacao-conteudo {
+    background: #EAF6FF;
+    padding: 60px 0;
+}
+
+/* Título */
+.transformacao-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3EBBEB;
+    margin-bottom: 30px;
+}
+
+/* Card */
+.card-transformacao {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-transformacao:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem do Card */
+.card-transformacao .card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Corpo do Card */
+.card-transformacao .card-body {
+    padding: 15px;
+}
+
+/* Nome */
+.card-transformacao .card-nome {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-transformacao strong {
+    font-weight: 500;
+}
+
+/* Texto */
+.card-transformacao .card-text {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Botão */
+.btn-transformacao {
+    background: linear-gradient(90deg, #0099ff, #66ccff);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-transformacao:hover {
+    opacity: 0.8;
+}
+
+/*  Antes e depois */
+.antes-depois-pluug {
+    background: #F8FAFC;
+    padding: 60px 0;
+}
+
+/*  Título */
+.antes-depois-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0099ff;
+    margin-bottom: 10px;
+}
+
+.antes-depois-subtitulo {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/*  Card */
+.card-antes-depois {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-antes-depois:hover {
+    transform: translateY(-5px);
+}
+
+/*  Cabeçalho do Card */
+.card-antes-depois .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-antes-depois .card-header h3 {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+/*  Ícone */
+.icone-antes-depois {
+    width: 24px;
+    height: 24px;
+}
+
+/* Lista */
+.card-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.card-lista li {
+    font-size: 14px;
+    color: #8A8A8A;
+    padding: 8px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.card-lista li:last-child {
+    border-bottom: none;
+}
+
+/*  Estilização do Footer */
+.footer-pluug {
+    background: #0099ff;
+    color: white;
+    padding: 20px 0 0 0;
+}
+
+/*  Imagem fixa colada na esquerda */
+.footer-img {
+    background: url("img/logo-footer.png") no-repeat center left;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-img img {
+    max-height: 100%;
+    width: auto;
+}
+
+/*  Texto e botão */
+.footer-content {
+    padding: 40px;
+}
+
+/*  Título */
+.footer-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*  Subtítulo */
+.footer-subtitulo {
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+/*  Link */
+.footer-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/*  Botão */
+.btn-teste-gratis {
+    background: linear-gradient(90deg, #6751D1, #862EF6);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn-teste-gratis:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .historias-reais .btn-quero-testar {
+        width: 100%;
+    }
+
+    .historias-reais h2 {
+        width: 100%;
+    }
+
+    .historias-reais img {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

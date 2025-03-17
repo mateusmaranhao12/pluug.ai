@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluug-ai - Meus projetos</title>
+    <link rel="shortcut icon" type="imagex/png" href="./img/icone - 10.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap JS (com Popper incluído no bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS do Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS do Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/depoimentos.css">
+</head>
+
+<body class="meus-projetos">
+
+    <!-- Navbar vertical -->
+    <div class="nav-vertical">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <div class="profile-info d-flex align-items-center ms-auto">
+                <div class="d-flex align-items-center">
+                    <div class="icon-wrapper me-3">
+                        <img class="icones-roxos" src="./imgs/flowbite_bell-outline.png" alt="Notificação">
+                    </div>
+                    <div class="icon-wrapper me-3" data-bs-toggle="modal" data-bs-target="#giftModal">
+                        <img class="icones-roxos" src="./imgs/tabler_gift.png" alt="Presente">
+                    </div>
+                </div>
+                <div class="profile-details text-end me-3">
+                    <strong>Mateus Maranhão</strong>
+                    <span class="credits"><b>25 créditos</b> restantes</span>
+                    <div class="progress mt-1">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <img class="foto-perfil" src="./imgs/8c23a2b4-e8b4-4d0d-b0fb-df7a47a0a22d.jpeg" alt="Foto do Perfil">
+                <i onclick="toggleMenu()" class="fas fa-chevron-down ms-2 dropdown-icon" style="cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu dropdown do perfil-->
+    <div class="menu-dropdown" id="menuDropdown">
+        <a href="#"><img class="img-fluid icones-dropdown" src="./imgs/Inicio.png"> Início</a>
+        <a href="#"><img class="img-fluid icones-dropdown" src="./imgs/Perfil.png"> Perfil</a>
+        <button class="btn-sair mt-2"><i class="fas fa-sign-out-alt me-2"></i> Sair</button>
+    </div>
+
+    <!--Conteudo principal-->
+    <div class="main-content">
+
+        <!-- Modal -->
+        <div class="modal fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab-convidar" onclick="showTab('convidar')">Convidar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab-recompensas"
+                                    onclick="showTab('recompensas')">Recompensas</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div id="convidar" class="tab-content active">
+                            <h5>Dê 10% de desconto e Ganhe até 20% de desconto na sua mensalidade</h5>
+                            <p>Convide amigos e novas contas para a Pluug.ai e ofereça um desconto especial de 10%.</p>
+                            <button class="btn-convidar w-100"><img class="img-fluid me-2" src="./imgs/tabler_gift.png">
+                                Pluug.ai/convidado</button>
+                            <button class="btn-copiar mt-3">Copiar link de convite</button>
+                            <h6 class="mt-4 info-importante-titulo">Informações importantes</h6>
+                            <p class="info-importante mt-2">O desconto não é cumulativo e será aplicado apenas em 1
+                                única mensalidade.</p>
+                        </div>
+                        <div id="recompensas" class="tab-content">
+                            <h5 class="mb-3">Recompensas ganhas: 15%</h5>
+                            <div class="quando-receberei">
+                                <img class="img-fluid mb-3" src="./imgs/tabler_gift.png">
+                                <h6>Quando receberei minha recompensa?</h6>
+                                <p>A sua recompensa será o desconto aplicado na sua próxima mensalidade. O desconto não
+                                    é cumulativo, ele será aplicado apenas em 1 única mensalidade, até 30 dias após a
+                                    indicação.</p>
+                                <p>Caso seu plano seja anual, seu desconto será aplicado no ato da renovação</p>
+                            </div>
+                            <button class="btn-recolher mt-3">Recolher recompensa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Historias reais-->
+        <section class="historias-reais">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center historias-reais-texto">
+                        <h2>Histórias reais de quem está mudando a forma de produzir conteúdo, <span>todos os dias com a
+                                Pluug.ai</span></h2>
+                        <p>Veja como eles estão escalando seus negócios no digital.</p>
+                        <button class="btn-quero-testar">Quero testar</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./imgs/ASSETS2/Group 1000001904.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Criadores-->
+        <section class="criadores">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Criadores que já estão revolucionando sua produção</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./imgs/ASSETS2/image.png">
+                    </div>
+                    <div class="col-md-6 criadores-card">
+                        <div class="card-depoimento-criadores">
+                            <h3 class="criadores-nome">Nome do usuário</h3>
+                            <p class="criadores-texto">
+                                Lorem ipsum dolor sit amet consectetur. Turpis convallis enim diam ut in sodales. Quam
+                                lorem lorem vitae enim morbi dictumst adipiscing. Ultrices urna non etiam quam ut sed
+                                aliquet libero.. Gravida sed quis libero orci. Neque feugiat elit egestas ipsum turpis
+                                magna arcu. Varius tincidunt et massa sed mi facilisis suspendisse. Sit magna aliquet
+                                elementum tortor proin dolor neque elit facilisi. Tellus libero eget risus mattis id
+                                nisl eu.
+                            </p>
+                            <p class="criadores-texto">
+                                Ac ultrices enim rhoncus accumsan a. Sit turpis porta egestas eu placerat et cursus.
+                                Nibh nisl vitae suspendisse risus egestas. In sed pretium sed.
+                            </p>
+                            <div class="criadores-controles">
+                                <button class="criadores-btn">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <div class="criadores-indicadores">
+                                    <span class="indicador ativo"></span>
+                                    <span class="indicador"></span>
+                                    <span class="indicador"></span>
+                                    <span class="indicador"></span>
+                                </div>
+                                <button class="criadores-btn">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Transformacao conteudo-->
+        <section class="transformacao-conteudo py-5">
+            <div class="container">
+                <h2 class="text-center transformacao-titulo">
+                    Como eles estão transformando a produção de conteúdo, a estratégia e alcançando resultados reais
+                </h2>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card-transformacao">
+                            <img src="./imgs/ASSETS2/image-3.png" class="img-fluid card-img" alt="Imagem do usuário">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur. Sed a pharetra gravida lectus. Scelerisque
+                                    aliquam at...
+                                </p>
+                                <p class="card-nome"><strong>Nome</strong></p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur. Sed a pharetra gravida lectus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card-transformacao">
+                            <img src="./imgs/ASSETS2/image-4.png" class="img-fluid card-img" alt="Imagem do usuário">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur. Sed a pharetra gravida lectus. Scelerisque
+                                    aliquam at...
+                                </p>
+                                <p class="card-nome"><strong>Nome</strong></p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur. Sed a pharetra gravida lectus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card-transformacao">
+                            <img src="./imgs/ASSETS2/image-2.png" class="img-fluid card-img" alt="Imagem do usuário">
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur. Sed a pharetra gravida lectus. Scelerisque
+                                    aliquam at...
+                                </p>
+                                <p class="card-nome"><strong>Nome</strong></p>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur. Sed a pharetra gravida lectus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão -->
+                <div class="text-center mt-4">
+                    <button class="btn-transformacao">
+                        Quero gerar mais resultados com IA
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Antes e depois-->
+        <section class="antes-depois-pluug py-5">
+            <div class="container">
+                <!-- Título -->
+                <h2 class="text-center antes-depois-titulo">
+                    Você ainda está criando conteúdo do jeito mais difícil?
+                </h2>
+                <p class="text-center antes-depois-subtitulo">
+                    A Pluug é a melhor solução para creators, empreendedores e profissionais terem resultado nas redes
+                    sociais.
+                </p>
+
+                <div class="row g-4 justify-content-center">
+                    <!-- Antes da Pluug -->
+                    <div class="col-md-5">
+                        <div class="card-antes-depois">
+                            <div class="card-header">
+                                <img src="./imgs/ASSETS2/ic_round-error.png" class="icone-antes-depois"
+                                    alt="Ícone erro">
+                                <h3>Antes da Pluug</h3>
+                            </div>
+                            <ul class="card-lista">
+                                <li>Perde horas planejando o que postar.</li>
+                                <li>Bloqueio criativo constante.</li>
+                                <li>Postagens aleatórias sem engajamento.</li>
+                                <li>Criação manual e demorada.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Depois da Pluug -->
+                    <div class="col-md-5">
+                        <div class="card-antes-depois">
+                            <div class="card-header">
+                                <img src="./imgs/ASSETS2/line-md_circle-filled-to-confirm-circle-filled-transition.png"
+                                    class="icone-antes-depois" alt="Ícone sucesso">
+                                <h3>Depois da Pluug</h3>
+                            </div>
+                            <ul class="card-lista">
+                                <li>Planejamento automático com IA.</li>
+                                <li>Sugestões personalizadas prontas para uso.</li>
+                                <li>Estratégias e postagens alinhadas ao seu nicho.</li>
+                                <li>Agentes inteligentes otimizam todo o fluxo criativo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer-pluug">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <!-- Imagem à esquerda ocupando toda a altura -->
+                    <div class="col-md-3 footer-img">
+                        <img src="./imgs/Pluug.ai - LinkedIn Capa.png" class="img-fluid">
+                    </div>
+
+                    <!-- Texto e botão -->
+                    <div
+                        class="col-md-9 d-flex flex-column justify-content-end align-items-end text-end footer-content">
+                        <h2 class="footer-titulo">
+                            Agora é a sua vez. Descubra o que a Pluug pode fazer por você!
+                        </h2>
+                        <p class="footer-subtitulo">
+                            Criar conteúdo não precisa ser cansativo. Criadores inovadores usam IA a seu favor.
+                            A Pluug já transformou a rotina de muitos criadores, agências e marcas. Agora chegou a sua
+                            vez!
+                        </p>
+                        <p class="footer-link">
+                            <strong>Desbloqueie seu Copiloto de Conteúdo agora!</strong>
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn-teste-gratis">Teste grátis!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>

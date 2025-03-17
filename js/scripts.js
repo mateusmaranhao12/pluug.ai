@@ -71,7 +71,7 @@ document.getElementById('enviar').addEventListener('click', function (e) {
         errorCheckbox.classList.add('active')
         hasError = true
     } else {
-checkbox.classList.remove('error')
+        checkbox.classList.remove('error')
         label.classList.remove('error')
         errorCheckbox.textContent = ''
         errorCheckbox.classList.remove('active')
@@ -131,4 +131,27 @@ function redirecionarWhatsApp() {
 function scrollToSection() {
     const section = document.getElementById('entre-em-contato')
     section.scrollIntoView({ behavior: 'smooth' })
+}
+
+//depoimentos
+function showTab(tabId) {
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'))
+    document.getElementById(tabId).classList.add('active')
+
+    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'))
+    document.getElementById('tab-' + tabId).classList.add('active')
+}
+
+//menu dropdown depoimentos
+function toggleMenu() {
+    const menu = document.getElementById('menuDropdown')
+    menu.classList.toggle('active')
+}
+
+// Fecha o menu ao clicar fora dele
+window.onclick = function (event) {
+    const menu = document.getElementById('menuDropdown')
+    if (!event.target.matches('.fa-chevron-down') && !event.target.closest('.menu-dropdown')) {
+        menu.classList.remove('active')
+    }
 }
