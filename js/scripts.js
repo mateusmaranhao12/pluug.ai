@@ -155,3 +155,19 @@ window.onclick = function (event) {
         menu.classList.remove('active')
     }
 }
+
+//modals transformacao criadores
+function abrirModalTransformacao(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+
+function fecharModalTransformacao(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function fecharModalTransformacaoPorFora(event, id) {
+    const modalContent = document.querySelector(`#${id} .modal-transformacao-content`);
+    if (!modalContent.contains(event.target)) {
+        fecharModalTransformacao(id);
+    }
+}
